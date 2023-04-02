@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SetLimit">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <EditText
+        android:id="@+id/set_et_numberInput"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="@string/set_et_numberInput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/set_btn1_plus"
+        android:onClick="plusMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plus_minus_btn"
+        android:text="@string/set_btn1_plus"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/set_et_numberInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/set_et_numberInput"
+        app:layout_constraintTop_toTopOf="@+id/set_et_numberInput" />
+
+    <Button
+        android:id="@+id/set_btn2_minus"
+        android:onClick="plusMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plus_minus_btn"
+        android:text="@string/set_btn2_minus"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/set_et_numberInput"
+        app:layout_constraintEnd_toStartOf="@+id/set_et_numberInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/set_et_numberInput" />
+
+    <Button
+        android:id="@+id/set_btn3_set"
+        android:onClick="setLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:text="@string/set_btn3_set"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/set_btn1_plus"
+        app:layout_constraintStart_toEndOf="@+id/set_btn2_minus"
+        app:layout_constraintTop_toBottomOf="@+id/set_et_numberInput" />
+
+    <Button
+        android:id="@+id/set_btn4_return"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/btn_background"
+        android:onClick="returnHome"
+        android:text="@string/main_menu_btn"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline90" />
+
+    <CheckBox
+        android:id="@+id/set_chb_todayCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/set_btn4_return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/set_txt_todayCheck"/>
+
+    <TextView
+        android:id="@+id/set_txt_todayCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_txt_todayCheck"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/set_btn4_return"
+        app:layout_constraintEnd_toStartOf="@+id/set_chb_todayCheck"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

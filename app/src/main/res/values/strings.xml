@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Beer Manager</string>
+    <string name="main_btn1_addOne">Přidej pivo</string>
+    <string name="main_btn2_setLimit">Nastav dnešní počet</string>
+    <string name="main_btn3_history">Vaše Historie</string>
+    <string name="main_btn4_yesterday">Poslední den</string>
+    <string name="main_btn5_settings">Nastavení</string>
+    <string name="main_menu_btn">Hlavní menu</string>
+    <string name="add_btn1_add">Pivo vypité</string>
+    <string name="set_et_numberInput">0</string>
+    <string name="set_btn1_plus">+</string>
+    <string name="set_btn2_minus">-</string>
+    <string name="set_btn3_set">Nastavit dnešní cíl</string>
+    <string name="set_txt_todayCheck">Dnešní cíl nastaven</string>
+    <string name="history_btn1_all">Ukázat vše</string>
+    <string name="history_btn2_positive">Splněné</string>
+    <string name="history_btn3_negative">Nesplněné</string>
+    <string name="history_btn4_delete">Smazat vše</string>
+    <string name="settings_btn2_set">Nastavit</string>
+    <string name="settings_chb1_tp1">Alarm 1</string>
+    <string name="settings_chb2_tp2">Alarm 2</string>
+    <string name="add_txt1_drunk_sentence">Dnes jste vypil: </string>
+    <string name="add_txt3_goal_sentence">Váš cíl je: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
